@@ -1,166 +1,376 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl" lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ابن شام - قائمة الطعام الفاخرة</title>
-    
-    <!-- Bootstrap 5 RTL -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
-    
-    <!-- Cairo Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>ابن شام — Syrian Cuisine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="light-theme">
-    
-    <!-- Header -->
-    <header class="header-section">
-        <div class="hero-bg-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="container">
-            <!-- Logo -->
-            <div class="logo-container">
-                <div class="logo-ring"></div>
-                <div class="logo-glow"></div>
-                <img src="Gemini_Generated_Image_nlq71snlq71snlq7-removebg-preview.png" alt="ابن شام" class="logo-image">
-            </div>
-            <h1 class="restaurant-name">
-                <span class="name-text">مطعم</span>
-                <span class="name-highlight">ابن شام</span>
-            </h1>
-            <p class="restaurant-tagline">
-                <span class="tagline-icon">✨</span>
-                أصالة الطعم الشامي
-                <span class="tagline-icon">✨</span>
-            </p>
-            <div class="hero-features">
-                <div class="feature-badge">
-                    <span class="badge-icon">🍴</span>
-                    <span>طعم أصيل</span>
-                </div>
-                <div class="feature-badge">
-                    <span class="badge-icon">🚀</span>
-                    <span>توصيل سريع</span>
-                </div>
-                <div class="feature-badge">
-                    <span class="badge-icon">⭐</span>
-                    <span>جودة عالية</span>
-                </div>
-            </div>
-        </div>
-    </header>
+<body>
 
-    <!-- Search Bar -->
-    <div class="search-container">
-        <div class="container">
-            <div class="search-wrapper">
-                <input type="text" id="searchInput" class="search-input" placeholder="ابحث عن طبق...">
-                <span class="search-icon">🔍</span>
-            </div>
+  <!-- ═══════════════════════════════════ COVER ═══════════════════════════════════ -->
+  <section class="cover" id="cover">
+    <div class="cover__bg-pattern"></div>
+    <div class="cover__vignette"></div>
+
+    <div class="cover__content">
+      <div class="cover__ornament cover__ornament--top">
+        <svg viewBox="0 0 300 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="20" x2="110" y2="20" stroke="#C9973A" stroke-width="0.8" opacity="0.6"/>
+          <path d="M120 20 L130 8 L140 20 L130 32 Z" stroke="#C9973A" stroke-width="0.8" fill="none" opacity="0.9"/>
+          <circle cx="150" cy="20" r="4" stroke="#C9973A" stroke-width="0.8" fill="none"/>
+          <circle cx="150" cy="20" r="1.5" fill="#C9973A" opacity="0.9"/>
+          <path d="M160 20 L170 8 L180 20 L170 32 Z" stroke="#C9973A" stroke-width="0.8" fill="none" opacity="0.9"/>
+          <line x1="190" y1="20" x2="300" y2="20" stroke="#C9973A" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="cover__logo-wrap">
+        <img src="Gemini_Generated_Image_nlq71snlq71snlq7-removebg-preview.png" alt="ابن شام" class="cover__logo" onerror="this.style.display='none'; document.querySelector('.cover__logo-fallback').style.display='flex'">
+        <div class="cover__logo-fallback">
+          <span>ابن</span><span>شام</span>
         </div>
+      </div>
+
+      <h1 class="cover__title">ابن شام</h1>
+      <p class="cover__subtitle-en">Syrian Cuisine</p>
+      <p class="cover__tagline">أصالة المذاق السوري الفاخر</p>
+
+      <div class="cover__ornament cover__ornament--bottom">
+        <svg viewBox="0 0 300 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="20" x2="110" y2="20" stroke="#C9973A" stroke-width="0.8" opacity="0.6"/>
+          <path d="M120 20 L130 8 L140 20 L130 32 Z" stroke="#C9973A" stroke-width="0.8" fill="none" opacity="0.9"/>
+          <circle cx="150" cy="20" r="4" stroke="#C9973A" stroke-width="0.8" fill="none"/>
+          <circle cx="150" cy="20" r="1.5" fill="#C9973A" opacity="0.9"/>
+          <path d="M160 20 L170 8 L180 20 L170 32 Z" stroke="#C9973A" stroke-width="0.8" fill="none" opacity="0.9"/>
+          <line x1="190" y1="20" x2="300" y2="20" stroke="#C9973A" stroke-width="0.8" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <a href="#menu" class="cover__cta">
+        <span>قائمة الطعام</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 3L8 13M8 13L4 9M8 13L12 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ NAV & SEARCH ═══════════════════════════════════ -->
+  <nav class="cat-nav" id="cat-nav">
+    <div class="cat-nav__search">
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="menuSearch" placeholder="ابحث في المنيو... (مثال: كريب، برجر، كبدة)">
+      </div>
+    </div>
+    <div class="cat-nav__inner" id="cat-nav-inner">
+      <button class="cat-nav__item active" data-target="sandwiches-chicken">سندوتشات سوري فراخ</button>
+      <button class="cat-nav__item" data-target="sandwiches-meat">سندوتشات سوري لحوم</button>
+      <button class="cat-nav__item" data-target="sandwiches-potato">سندوتشات سوري بطاطس</button>
+      <button class="cat-nav__item" data-target="meals">الوجبات</button>
+      <button class="cat-nav__item" data-target="fattat">الفتات</button>
+      <button class="cat-nav__item" data-target="crepe-savory">كريب حادق</button>
+      <button class="cat-nav__item" data-target="crepe-sweet">كريب حلو</button>
+      <button class="cat-nav__item" data-target="mixes">ميكسات</button>
+      <button class="cat-nav__item" data-target="plates">الأطباق</button>
+      <button class="cat-nav__item" data-target="burger">برجر</button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════ MENU ═══════════════════════════════════ -->
+  <main class="menu" id="menu">
+
+    <!-- FREE FRIES BANNER -->
+    <div class="free-banner">
+      <span class="free-banner__icon">🍟</span>
+      <span>جميع السندوتشات تقدم مع البطاطس الجبنة</span>
+      <span class="free-banner__icon">🍟</span>
     </div>
 
-    <!-- Category Filter - Sticky -->
-    <div class="category-bar-container">
-        <div class="container">
-            <ul class="nav nav-pills category-pills" id="categoryFilter">
-                <li class="nav-item">
-                    <button class="nav-link active" data-category="all">الكل</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="western-sandwiches">سندويشات غربي</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="eastern-sandwiches">سندويشات شرقي</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="meals">الوجبات</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="fattat">الفتات</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="savory-crepe">كريب حادق</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="meat-crepe">كريب لحوم</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="chicken-crepe">كريب فراخ</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="sweet-crepe">كريب حلو</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="combos">ميكسات</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="dishes">الأطباق</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="meat-burgers">برجر لحمة</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="chicken-burgers">برجر فراخ</button>
-                </li>
-                <li class="nav-item">
-                    <button class="nav-link" data-category="extras">الإضافات</button>
-                </li>
-            </ul>
+    <!-- ───── سندوتشات سوري فراخ ───── -->
+    <section class="menu-section" id="sandwiches-chicken">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">سندوتشات سوري فراخ</h2>
+        <div class="section-header__line"></div>
+      </div>
+
+      <div class="multi-table">
+        <div class="multi-table__head">
+          <div>الصنف</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
         </div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">بانيه</div><div class="multi-table__price">25</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">كريسبي</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">زنجر</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">شاورما</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">فاهيتا</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">شيش طاووق</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">كبدة فراخ</div><div class="multi-table__price">40</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">ميكسيكي</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+      </div>
+    </section>
+
+    <!-- ───── سندوتشات سوري لحوم ───── -->
+    <section class="menu-section" id="sandwiches-meat">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">سندوتشات سوري لحوم</h2>
+        <div class="section-header__line"></div>
+      </div>
+
+      <div class="multi-table">
+        <div class="multi-table__head">
+          <div>الصنف</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
+        </div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">سجق مشوي</div><div class="multi-table__price">40</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">سجق بالخلطة</div><div class="multi-table__price">40</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">سوسيس</div><div class="multi-table__price">30</div><div class="multi-table__price">40</div><div class="multi-table__price">50</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">ميكسيكان</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div><div class="multi-table__price">70</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">كفتة</div><div class="multi-table__price">40</div><div class="multi-table__price">50</div><div class="multi-table__price">60</div></div>
+      </div>
+    </section>
+
+    <!-- ───── سندوتشات سوري بطاطس ───── -->
+    <section class="menu-section" id="sandwiches-potato">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">سندوتشات سوري بطاطس</h2>
+        <div class="section-header__line"></div>
+      </div>
+
+      <div class="multi-table">
+        <div class="multi-table__head">
+          <div>الصنف</div>
+          <div>M</div>
+          <div>L</div>
+          <div>XL</div>
+        </div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">بطاطس</div><div class="multi-table__price">15</div><div class="multi-table__price">20</div><div class="multi-table__price">25</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">بطاطس موتزاريلا</div><div class="multi-table__price">25</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">بطاطس شيدر</div><div class="multi-table__price">25</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">بطاطس ميكس جبن</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div><div class="multi-table__price">40</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">جبنة مقلية شيدر</div><div class="multi-table__price">25</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div></div>
+        <div class="multi-table__row" data-cols="4"><div class="multi-table__name">جبنة مقلية تركي</div><div class="multi-table__price">30</div><div class="multi-table__price">35</div><div class="multi-table__price">40</div></div>
+      </div>
+    </section>
+
+    <!-- ───── الوجبات ───── -->
+    <section class="menu-section" id="meals">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">الوجبات</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="items-list">
+        <div class="item-row item-row--desc">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=360&q=80" alt="وجبة كرسبي" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة كرسبي</span><span class="item-row__desc">4 قطع كرسبي + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">110</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1580554530778-ca36943938b2?auto=format&fit=crop&w=360&q=80" alt="وجبة كبدة فراخ" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة كبدة فراخ</span><span class="item-row__desc">كبدة فراخ + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">90</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=360&q=80" alt="وجبة زنجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة زنجر</span><span class="item-row__desc">4 قطع زنجر + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">110</span>
+        </div>
+        <div class="item-row item-row--desc featured">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=360&q=80" alt="وجبة مشكل ابن شام" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة مشكل ابن شام ⭐</span><span class="item-row__desc">كرسبي + شاورما فراخ + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">120</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&w=360&q=80" alt="وجبة شاورما فراخ" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة شاورما فراخ</span><span class="item-row__desc">شاورما فراخ + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">110</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="meal-thumb" src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=360&q=80" alt="وجبة شيش طاووق" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">وجبة شيش طاووق</span><span class="item-row__desc">قطع شيش طاووق + أرز + تومية + مخلل + عيش + بطاطس</span></div>
+          <span class="item-row__price">120</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── الفتات ───── -->
+    <section class="menu-section" id="fattat">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">الفتات</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="multi-table multi-table--three">
+        <div class="multi-table__head" style="grid-template-columns: 3fr 1fr 1fr;">
+          <div>الصنف</div>
+          <div>L</div>
+          <div>XL</div>
+        </div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة شاورما فراخ</div><div class="multi-table__price">70</div><div class="multi-table__price">90</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة شاورما فراخ موزاريلا</div><div class="multi-table__price">80</div><div class="multi-table__price">100</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة كريبسي</div><div class="multi-table__price">70</div><div class="multi-table__price">90</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة زنجر</div><div class="multi-table__price">70</div><div class="multi-table__price">90</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة شيش طاووق</div><div class="multi-table__price">80</div><div class="multi-table__price">100</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">فتة كبدة فراخ</div><div class="multi-table__price">70</div><div class="multi-table__price">80</div></div>
+      </div>
+    </section>
+
+    <!-- ───── كريب حادق ───── -->
+    <section class="menu-section" id="crepe-savory">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">كريب حادق</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="items-list">
+        <div class="item-row"><span class="item-row__name">كريب بطاطس</span><span class="item-row__price">45</span></div>
+        <div class="item-row"><span class="item-row__name">كريب موزاريلا</span><span class="item-row__price">50</span></div>
+        <div class="item-row"><span class="item-row__name">كريب مشكل جبن</span><span class="item-row__price">60</span></div>
+        <div class="item-row"><span class="item-row__name">كريب سجق</span><span class="item-row__price">70</span></div>
+        <div class="item-row"><span class="item-row__name">كريب سوسيس</span><span class="item-row__price">60</span></div>
+        <div class="item-row"><span class="item-row__name">كريب كفتة</span><span class="item-row__price">70</span></div>
+        <div class="item-row"><span class="item-row__name">كريب بسطرمة</span><span class="item-row__price">80</span></div>
+        <div class="item-row"><span class="item-row__name">كريب بانيه</span><span class="item-row__price">60</span></div>
+        <div class="item-row"><span class="item-row__name">كريب كريسبي</span><span class="item-row__price">70</span></div>
+        <div class="item-row"><span class="item-row__name">كريب زنجر</span><span class="item-row__price">70</span></div>
+        <div class="item-row"><span class="item-row__name">كريب فاهيتا</span><span class="item-row__price">70</span></div>
+        <div class="item-row featured"><span class="item-row__name">كريب مشكل لحوم ⭐</span><span class="item-row__price">90</span></div>
+        <div class="item-row featured"><span class="item-row__name">كريب مشكل فراخ ⭐</span><span class="item-row__price">90</span></div>
+      </div>
+    </section>
+
+    <!-- ───── كريب حلو ───── -->
+    <section class="menu-section" id="crepe-sweet">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">كريب حلو</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="items-list">
+        <div class="item-row"><span class="item-row__name">كريب شيكولاته توتيلا</span><span class="item-row__price">50</span></div>
+        <div class="item-row"><span class="item-row__name">كريب توتيلا موز</span><span class="item-row__price">60</span></div>
+        <div class="item-row"><span class="item-row__name">كريب توتيلا هوهوز</span><span class="item-row__price">60</span></div>
+      </div>
+    </section>
+
+    <!-- ───── ميكسات ───── -->
+    <section class="menu-section" id="mixes">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">ميكسات</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="items-list">
+        <div class="item-row"><span class="item-row__name">زنجر فاهيتا</span><span class="item-row__price">65</span></div>
+        <div class="item-row"><span class="item-row__name">زنجر فاهيتا موزاريلا</span><span class="item-row__price">75</span></div>
+        <div class="item-row"><span class="item-row__name">شيش طاووق فاهيتا</span><span class="item-row__price">65</span></div>
+        <div class="item-row featured"><span class="item-row__name">شيش طاووق + فاهيتا + موزاريلا ⭐</span><span class="item-row__price">75</span></div>
+      </div>
+    </section>
+
+    <!-- ───── الأطباق ───── -->
+    <section class="menu-section" id="plates">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">الأطباق</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="multi-table multi-table--three">
+        <div class="multi-table__head" style="grid-template-columns: 3fr 1fr 1fr;">
+          <div>الصنف</div>
+          <div>صغير</div>
+          <div>كبير</div>
+        </div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">طبق أرز</div><div class="multi-table__price">35</div><div class="multi-table__price">50</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">طبق بطاطس</div><div class="multi-table__price">10</div><div class="multi-table__price">30</div></div>
+        <div class="multi-table__row" style="grid-template-columns: 3fr 1fr 1fr;"><div class="multi-table__name">طبق تومية</div><div class="multi-table__price">10</div><div class="multi-table__price">20</div></div>
+      </div>
+    </section>
+
+    <!-- ───── برجر ───── -->
+    <section class="menu-section" id="burger">
+      <div class="section-header">
+        <div class="section-header__line"></div>
+        <h2 class="section-header__title">برجر</h2>
+        <div class="section-header__line"></div>
+      </div>
+      <div class="items-list">
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=360&q=80" alt="كلاسيك برجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">كلاسيك برجر</span><span class="item-row__desc">1 قطعة برجر 110 جرام + خس + بصل + طماطم + بريكو + بيج تيستي + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">70</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=360&q=80" alt="ديل برجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">ديل برجر</span><span class="item-row__desc">2 قطعة برجر 110 جرام + خس + بصل + طماطم + بريكو + بيج تيستي + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">100</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=360&q=80" alt="ترابل برجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">ترابل برجر</span><span class="item-row__desc">3 قطعة برجر 110 جرام + خس + بصل + طماطم + بريكو + بيج تيستي + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">130</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=360&q=80" alt="ماجنم برجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">ماجنم برجر</span><span class="item-row__desc">1 قطعة برجر 110 جرام + قطعة فوت دوج + شرائح لحم + خس + بصل + طماطم + بريكو + بيج تيستي + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">100</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=360&q=80" alt="اورجينال تشيز برجر" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">اورجينال تشيز برجر</span><span class="item-row__desc">1 قطعة برجر 110 جرام + 2 موزاريلا سنيك + خس + بصل + طماطم + بريكو + بيج تيستي + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">90</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=360&q=80" alt="كلاسيك تشيكن" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">كلاسيك تشيكن</span><span class="item-row__desc">2 قطعة تشيكن + خس + بصل + طماطم + بريكو + صوص رانش + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">70</span>
+        </div>
+        <div class="item-row item-row--desc">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1615297928064-24977384d0da?auto=format&fit=crop&w=360&q=80" alt="ماجنم تشيكن" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">ماجنم تشيكن</span><span class="item-row__desc">3 قطعة تشيكن + خس + بصل + طماطم + بريكو + صوص رانش + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">100</span>
+        </div>
+        <div class="item-row item-row--desc featured">
+          <img class="burger-thumb" src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=360&q=80" alt="تشيكن بيكون" loading="lazy">
+          <div class="item-row__info"><span class="item-row__name">تشيكن بيكون ⭐</span><span class="item-row__desc">3 قطعة تشيكن + شرائح بسطرمة + خس + بصل + طماطم + بريكو + صوص رانش + صوص شيدر + بطاطس جبنة</span></div>
+          <span class="item-row__price">110</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__ornament">
+      <svg viewBox="0 0 300 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0" y1="15" x2="120" y2="15" stroke="#C9973A" stroke-width="0.6" opacity="0.5"/>
+        <circle cx="150" cy="15" r="3" stroke="#C9973A" stroke-width="0.8" fill="none"/>
+        <circle cx="150" cy="15" r="1" fill="#C9973A" opacity="0.9"/>
+        <line x1="180" y1="15" x2="300" y2="15" stroke="#C9973A" stroke-width="0.6" opacity="0.5"/>
+      </svg>
     </div>
-
-    <!-- Menu Items -->
-    <div class="menu-section">
-        <div class="container">
-            <div id="menuContainer">
-                <!-- Menu items will be dynamically loaded -->
-            </div>
-            
-            <!-- No Results Message -->
-            <div id="noResults" class="no-results" style="display: none;">
-                <p>لا توجد نتائج مطابقة للبحث</p>
-            </div>
-            
-            <!-- Free Fries Notice -->
-            <div class="free-fries-notice">
-                🍟 جميع السندوتشات تقدم مع البطاطس مجاناً 🍟
-            </div>
-        </div>
+    <div class="footer__logo">ابن شام</div>
+    <div class="footer__address">📍 الفلكي — شارع 16 الملك — بجوار كافيتريا تشيلي</div>
+    <div class="footer__phones">
+      <a class="footer__phone" href="tel:033324450">📞 03 / 3324450</a>
+      <a class="footer__phone whatsapp" href="https://wa.me/201281989786">🟢 01281989786</a>
     </div>
+    <div class="footer__delivery">🛵 خدمة التوصيل: 03 / 3324450</div>
+    <div class="footer__copy">© ابن شام — Syrian Cuisine</div>
+    <div class="footer__copy">Developed by ENG. MAHMOUD ATTIA IBRAHIME</div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="menu-footer">
-                <div class="footer-address">📍 الفلكي - شارع 16 الملك - بجوار كافيتريا تشيلي</div>
-                <div class="footer-phones">
-                    <div class="phone-item">📞 01281989786</div>
-                    <div class="phone-item">📞 0102967362</div>
-                    <div class="phone-item">
-                        <span class="whatsapp-icon">🟢</span> 01228599546
-                    </div>
-                </div>
-                <div class="footer-phones" style="margin-top: 20px;">
-                    <div class="phone-item">🛵 خدمة التوصيل: 01281989786</div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Custom JS -->
-    <script src="script.js"></script>
-    
+  <script src="script.js"></script>
 </body>
 </html>
